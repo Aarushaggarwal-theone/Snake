@@ -4,6 +4,23 @@ from food_class import Food
 x_cor = 20
 class Snake():
     
+    """
+    The Snake class represents the snake in a simple turtle graphics game.
+
+    Attributes:
+    - turtles (list): A list containing Turtle objects representing the segments of the snake.
+
+    Methods:
+    - __init__(): Initializes a new Snake object, creates the initial snake design, and sets it in motion.
+    - design(): Creates the initial design of the snake with two segments.
+    - move(): Moves the snake by updating the positions of its segments.
+    - up(): Changes the snake's direction to upward if not already moving downward.
+    - down(): Changes the snake's direction to downward if not already moving upward.
+    - left(): Changes the snake's direction to leftward if not already moving rightward.
+    - right(): Changes the snake's direction to rightward if not already moving leftward.
+    - grow(): Adds a new segment to the snake, extending its length.
+    """
+    
     def __init__(self):
         self.turtles = []
         self.design()
